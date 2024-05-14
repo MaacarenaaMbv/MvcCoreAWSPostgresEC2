@@ -12,6 +12,7 @@ string connectionString =
 builder.Services.AddTransient<RepositoryDepartamentos>();
 builder.Services.AddDbContext<DepartamentosContext>(
     options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+//
 
 /*builder.Services.AddDbContext<DepartamentosContext>(
     options => options.UseNpgsql(connectionString));*/
